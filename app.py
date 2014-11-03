@@ -75,7 +75,7 @@ def threaded_response():
 
     thr = Thread(target=async_print, args=[app, urls, postUrl])
     thr.start()
-    return 'Thread started!'
+    return 'OK'
 
 @app.route('/post', methods=['POST'])
 def post_save():
